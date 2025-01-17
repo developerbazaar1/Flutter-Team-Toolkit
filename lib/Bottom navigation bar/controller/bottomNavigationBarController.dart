@@ -88,7 +88,10 @@ class HomeScreen extends StatelessWidget {
       body: Center(child: Text('HomeScreen'),),
     );
   }
-}class MyJobsScreen extends StatelessWidget {
+}
+
+
+class MyJobsScreen extends StatelessWidget {
   const MyJobsScreen({super.key});
 
   @override
