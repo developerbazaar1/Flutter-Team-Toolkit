@@ -10,6 +10,7 @@ import 'package:newtest_app/test.dart';
 
 import 'Bottom navigation bar/view/screen/bottomNavigationBarScreen.dart';
 import 'Onboarding/view/OnBoardingSliderScreen.dart';
+import 'date_picker/view/dob_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:  OnboardingScreen(),
+      home:  DatePickerScreen(),
     );
   }
 }

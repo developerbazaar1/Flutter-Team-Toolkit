@@ -734,3 +734,4 @@ class MailTile extends StatelessWidget {
     );
   }
 }
+
