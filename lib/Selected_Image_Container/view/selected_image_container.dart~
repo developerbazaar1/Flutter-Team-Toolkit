@@ -4,10 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 
-import '../controller/selected_image_controller.dart';
-
-
-
 class SelectedImageContainer extends StatelessWidget {
   final SelectedImageController controller; // Pass the controller to make it reusable
   final Color containerColor;

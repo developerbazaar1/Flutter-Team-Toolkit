@@ -2,7 +2,7 @@ import 'dart:io';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 
-class JunkDetailsController extends GetxController {
+class SelectedImageController extends GetxController {
   var selectedImages = <File>[].obs;
   final int maxImages = 5;
 

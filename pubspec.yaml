@@ -51,6 +51,13 @@ dependencies:
   #for Image Picker 
   image_picker: ^0.8.7
 
+  #for image loading with shimmer
+  cached_network_image: ^3.3.1
+  shimmer: ^3.0.0
+
+  #For Combination Graph
+  syncfusion_flutter_charts: ^28.1.41
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
