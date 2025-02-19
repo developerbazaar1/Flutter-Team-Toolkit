@@ -1,5 +1,5 @@
 import 'dart:math';
-
+import 'package:url_launcher/url_launcher.dart';
 //this method return true if user is in the range of currentUser else return false
 bool isInRange(
     {
@@ -39,3 +39,24 @@ bool isInRange(
   return distance >= minDistance && distance <= maxDistance;
 }
 
+
+
+// Function to launch the email app
+//import 'package:url_launcher/url_launcher.dart';
+  Future<void> sendEmail({
+    required BuildContext context,
+    required String email,
+    required String subject,
+    required String body,
+  }) async {
+    String email1 = email;
+    final String subject1 = Uri.encodeComponent(subject);
+    final String body1 = Uri.encodeComponent(body);
+    final Uri emailUri = Uri.parse('mailto:$email1?subject=$subject1&body=$body1');
+    try {
+      await launchUrl(emailUri, mode: LaunchMode.externalApplication);
+    } catch (e) {
+      // Catch any other errors
+      MySnackBar.showError(title: "An error occurred: $e");
+    }
+  }
